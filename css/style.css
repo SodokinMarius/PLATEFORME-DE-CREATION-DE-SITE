@@ -1,0 +1,59 @@
+body{
+    margin: auto;
+    padding: 0;
+}
+
+.p-add,.p-add *,.p-add >i {
+background-color: blue !important; 
+    font-size:x-large !important;
+    font-weight:bold;
+   color: white !important;
+   text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+   border-radius: 10px;
+   padding:5px;
+}
+
+#first-p i{
+    color: blue;
+}
+
+.p-bg-color{color: white !important;}
+ 
+
+.button{    
+    height: 30px !important;
+    padding: 25px !important;
+  width: max-content;
+  font-size: larger !important;
+  margin: auto !important;
+}
+
+
+
+.succes-section{
+    height: 350px !important;
+}
+
+.price-card{
+    min-width: 30% !important;
+
+}
+
+._section{
+    height: 100vh;
+}
+
+._footer{background-color: rgba(0, 0, blue, 0.5) !important; height: 100px;}
+
+.small-present-bg-blue{
+    height: 300px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.total-height{height: 80vh; position: relative; margin-top: 10px;}
+
+.bg-primary-customised{
+    background-color: #00008B;
+}

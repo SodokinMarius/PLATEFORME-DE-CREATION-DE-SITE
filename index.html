@@ -1,23 +1,559 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpleSite Creation</title>
-    <!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SimpleSite Creation</title>
+        <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Font awesome bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    
+    <script src="js/site.js"></script>
+    
+    </head>
+    <body>
+        <header class="mb-5 position-absolute">
+            <nav class="navbar navbar-light bg-light fixed-top ">
+                <div class="container-fluid d-flex justify-content-between px-5 ">
+                  <span class="navbar-brand mb-0 h1 nav-text text-danger fw-bolder fs-2">SimpleSite</span>
+                  <span class="btn btn-primary text-light fw-bold rounded-0 p-2  fs-4 tohide-button" style="width:max-content ; height:fit-content">Commencer</span>
+    
+                </div>
+              </nav>
+        </header>
+    
+        <main class="mt-5 posution-relative">
+           <section class="my-3 _section " >
+            <div class="container-fluid h-100 ">
+                <div class="row">
+                    <div class="col-12  col-md-6 text-center pt-5" >
+                        <h1 class="fs-1 ps-5">Créez un magnifique site web ou blog</h1>
+                        <p class="fs-4 ps-5 ">Nous vous guiderons pas à pas, du début à la fin. C'est pourquoi vous n'avez besoin d'aucune expérience pour construire le site web parfait.
+    
+                            Quel type de site internet voulez-vous créer?
+                            
+                            </p>
+                        <div class="row gy-5 p-5">
+                            <div class="col-12 d-flex justify-content-between  rounded-4 w-75" id="first-p">                           
+                                                             
+                                          <a href="#" class="text-decoration-none  text-dark h4 ">  Profesionnel <br>
+                                            <span class="tohide-text-first-p">Faites la promotion de vos produits ou de votre expertise</span>
+                                          </a>                          
+                                     
+                                         <i class="fa fa-chevron-right  text-primary fa-1x  fw-bolder "></i>                               
+                              
+                            </div>
+    
+                            <div class="col-12 d-flex justify-content-between rounded-4 w-75" id="second-p">                           
+                                                             
+                                <a href="#" class="text-decoration-none h4 text-dark">  Blog ou Personnel  <br>
+                                  <span class="tohide-text-second-p">Créer un blog, un portfolio ou un autre genre de site personnel</span>
+                                </a>                                
+                           
+                               <i class="fa fa-chevron-right  fa-1x  fw-bolder text-primary"></i>                               
+                    
+                            </div>
+    
+                  <div class="col-12 d-flex justify-content-between  rounded-4 w-75" id="other-p">                           
+                                                             
+                    <a href="#" class="text-decoration-none  h4 text-dark"> Autre <br>
+                      <span class="tohide-text-other-p">Créer n'importe quelle type de site web.</span>
+                    </a>                                
+                   <i class="fa fa-chevron-right  fa-1x  fw-bolder text-primary"></i>                               
+        
+                </div>
+                            
+                  </div>
+                        
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="images/fr_large.png" alt="wait loading..." class="w-100">
+                    </div>
+                </div>
+    
+                <!--Flèche bleue-->
+                <div class="row my-5">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <!--i class="fa-solid fa-circle-chevron-down"></i-->
+                      <a href="#presentation-bg-blue" class="text-decoration-none">   <i class="fa fa-chevron-down  fa-2x  fw-bolder  text-center  text-light bg-primary rounded-circle p-2 mx-auto"></i>  </a>
+                        
+                    </div>
+                </div>
+    
+                <div class="row bg-primary mt-5" id="scroll-event-block">
+    
+                    <div class="col text-light text-center  rounded-3 small-present-bg-blue">
+                        <h1 class="fs-1 fw-bolder mb-5 " id="presentation-bg-blue" >Le meilleur moyen de créer un excellent site web</h1>
+    
+                        <p class="text-light fw-ligth fs-2" >SimpleSite permet à tout le monde de créer facilement un formidable site internet. Plus de 26 millions de personnes dans le monde l'ont déjà fait. Vous aussi, vous le pouvez.</p>
+                    </div>
+                </div>
+            </div>
+           </section>
 
-<!-- Font awesome bootstrap css-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+           <section style="height: 250px;"></section>
 
-<link rel="stylesheet" href="css/style.css">
-<script src="js/site.js"></script>
-</head>
-<body>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
-</html>
+           <section class=" total-height ">
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center pt-5 ">
+                        <h2 class="fs-1">Augmentez le nombre de clients de votre entreprise.</h2>
+    
+                        <p class="fs-4">
+                            Atteignez votre clientèle cible en ligne. Obtenez plus de clients pour votre entreprise ou de lecteurs pour votre blog.
+                        </p>
+                    </div>
+                    <div class="col p-2">
+    
+                        <img src="images/add_clients_to_entreprise.png" alt="wait loading..." class="w-100">
+                    </div>
+                </div>
+            </div>
+           </section>
+    
+           <section class="my-0 total-height ">
+            <div class="container ">
+                <div class="row ">
+                     <div class="col p-2">
+    
+                        <img src="images/use_prefer_app.png" alt="wait loading..." class="w-100  h-100">
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-center pt-5 ">
+                        <h2 class="fs-1"> Utilisez l'appareil que vous préférez </h2>
+    
+                        <p class="fs-4">
+                            Gérez confortablement votre site web sur votre ordinateur portable chez vous, mettez-le à jour sur votre tablette partout où vous allez ou téléchargez des photos directement depuis votre téléphone.
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+           </section>
+           <section class="my-0  total-height">
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col-sm-12 col-md-6 text-center pt-5  h-100 bg-light" >
+                        <h2 class="align-self-center fs-1"> Une création rapide, facile et entièrement guidée</h2>
+                        <p class="align-self-center fs-4">
+                           
+                    Créez sans effort un site internet à l'aspect professionnel en suivant nos conseils étape par étape, sans avoir à écrire une seule ligne de code.
+                        </p>
+                    </div>
+                    <div class="col p-2 m-5 bg-secondary h-80 align-self-center">
+    
+                        <img src="images/add_clients_to_entreprise.png" alt="wait loading..." class="w-100 h-80">
+                    </div>
+                </div>
+            </div>
+           </section>
+           <section class="my-0 ">
+            <div class="container-fluid bg-primary">
+                <div class="row h-120">
+                     <div class="col p-2">
+    
+                        <img src="images/use_prefer_app.png" alt="wait loading..." class="w-100 m-8">
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-center pt-5  h-80 text-light">
+                        <h2 class="fs-1"> Un éditeur visuel et facile à utiliser </h2>
+    
+                        <p class="m-10 text-center text-light fs-4" >                      
+                        Puisque vous n'avez plus besoin de passer par une agence de création, vous faites des économies. Notre créateur de site web a été conçu pour les débutants. Aucune compétence en programmation n'est requise.
+                        </p>
+    
+                    </div>
+                   
+                </div>
+    
+                <div class="row h-50">
+                    <div class="col p-2">
+                        <div class="btn btn-light text-primary fw-bold rounded-0 p-3 d-flex justify-content-center align-items-center mx-auto fs-4" style="width:max-content ;">Commencer</div>
+                    </div>                    
+                </div>
+            </div>
+           </section>
+           
+    
+           <section class="my-0 total-height">
+            <div class="container-fluid  bg-light">
+                <div class="row   h-100">
+                    
+                    <div class="col-sm-12 text-center pt-5  h-50">
+                        <h2 class="mt-5 fs-1"> Nous sommes là pour assurer votre réussite </h2>
+    
+                        <p class=" text-center my-5 fs-4 px-5" >                      
+                           Avec notre concepteur de site web apprécié et l'aide de notre équipe d'assistance hautement qualifiée, vous obtiendrez le site web parfait pour votre entreprise ou votre blog.
+                        </p>
+    
+                    </div>
+                   
+                </div>
+    
+                <div class="row   gy-5">
+                    
+                    <div class="col-sm-12  text-center pt-5  my-5 ">
+                        <h2> Service clientèle 24h/24 7j/7  </h2>
+    
+                        <p class="my-5 text-center fs-4 px-5 " >   
+                    Notre équipe d'experts locaux est là pour vous aider dès que vous en avez besoin.                   
+                        </p>
+    
+                    </div>
+                   
+                </div>
+    
+                <div class="row  my-5">
+                    <div class="col p-2">
+                        <div class="btn btn-primary text-light fw-bold rounded-0 p-3 d-flex justify-content-center align-items-center mx-auto fs-4" style="width:max-content ;">Commencer</div>
+                    </div>                    
+                </div>
+            </div>
+           </section>
+    
+           <section class="my-0 ">
+            <div class="container  ">
+                <div class="row gy-5 m-5 py-5">
+                    <div class="col-sm-12 text-center pt-5  h-80  ">
+                        <h2 class="h1 fw-bolder mb-8 fs-1"> Choisissez entre les formules gratuites et payantes </h2>
+    
+                        <p class=" text-center text-lg lh-base fs-4">                      
+                            Créez un site web SimpleSite et utilisez-le gratuitement pendant les 30 premiers jours - aucune carte de crédit n'est nécessaire! Passez à la version PRO ou E-commerce maintenant ou après la période d'essai et obtenez un domaine personnel et de nombreux autres avantages.
+                        </p>
+                    </div>
+    
+                    <div class="text-center pt-5 d-flex justify-content-center align-items-center ">
+                        <div class="btn btn-dark  text-light rounded-0 text-center border-5 w-30 fs-3 ">Trimestriel</div>
+                        <div class="btn btn-light text-dark rounded-0  m-5  text-center border-3 border-dark w-30 fs-3 " > Annuel</div>
+                       
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <div class="btn btn-success text-light fw-bolder w-30 rounded-0 p-3 d-flex justify-content-center align-items-center button">Le plus populaire</div>
+                    </div>  
+                    
+                    <div class="col-12 p-2 d-flex justify-content-around  align-items-center">
+      <div class="row">
+                        <div class="card col-12 col-md-3 shadow p-4 mb-5 bg-body rounded price-card me-5 py-2">
+                           <p class="text-dark  ms-3 fw-bold">Basic</p>           
+                        
+    
+                           <div class="card-body">
+                            <h2 class="card-title text-start fs-2">Gratuit</h2>
+                            <small class="fw-light">Tout ce qu'il faut pour un site web basique</small> 
+                            <div class="d-flex align-items-start flex-column mb-3" style="height: 600px;">
+                              <div class="col">
+                                  <div class="d-flex justify-content-start flex-row align-items-center">
+                                      <i class="fas fa-check-circle text-success"></i>
+                                       <span class="m-2">Banque d'images gratuite</span>
+                                  </div>
+                      
+                              </div>
+    
+                              <div class="col">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                      <i class="fas fa-check-circle text-success"></i>
+                                       <span class="m-2">Affichage des publicités de SimpleSite</span>
+                                  </div>
+                                   </div>
+    
+                              <div class="col">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                      <i class="fas fa-check-circle text-success"></i>
+                                       <span class="m-2">Nom de domaine de SimpleSite</span>
+                               </div>
+                      
+                              </div>
+    
+                              <div class="col">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                      <i class="fas fa-check-circle text-success"></i>
+                                       <span class="m-2">5 produits de la boutique en ligne</span>
+                                  </div>
+                      
+                              </div>
+    
+                              <div class="col">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                      <i class="fas fa-check-circle text-success"></i>
+                                       <span class="m-2">Editeur mobile</span>
+                                  </div>
+                      
+                              </div>
+    
+                              <div class="col">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                      <i class="fas fa-check-circle text-success"></i>
+                                       <span class="m-2">30 jours</span>
+                                  </div>
+                      
+                              </div>
+                          </div>                       
+                     
+                  </div>  
+                  
+                </div>
+    
+                <div class="card shadow col-12 col-md-3  p-4 mb-5 bg-body rounded price-card me-5">
+                    <p class="text-dark  ms-3 fw-bold">Pro</p>           
+                     
+                    <div class="card-body">
+                     <p class="card-title text-start h1 ">US$ 13,32 <span class="h4">/mois</span></p>
+                     <p>Facturation trimestrielle</p>
+                     <small class="fw-light">idéal pour les blogs et les sites web profesionnels</small> 
+                     <div class="d-flex align-items-start flex-column mb-3" style="height: 600px;">
+                       <div class="col">
+                           <div class="d-flex justify-content-start flex-row align-items-center">
+                               <i class="fas fa-check-circle text-success"></i>
+                                <span class="m-2">Banque d'images gratuite</span>
+                           </div>
+               
+                       </div>
+    
+                       <div class="col">
+                           <div class="d-flex justify-content-center align-items-center">
+                               <i class="fas fa-check-circle text-success"></i>
+                                <span class="m-2">Sans publicités</span>
+                           </div>
+               
+                       </div>
+    
+                       <div class="col">
+                           <div class="d-flex justify-content-center align-items-center">
+                               <i class="fas fa-check-circle text-success"></i>
+                                <span class="m-2">Nom de domaine personalisé (valeur : US$ 15,00)</span>
+                        </div>
+               
+                       </div>
+    
+                       <div class="col">
+                           <div class="d-flex justify-content-center align-items-center">
+                               <i class="fas fa-check-circle text-success"></i>
+                                <span class="m-2">5 adresses email personnalisées</span>
+                           </div>
+               
+                       </div>
+    
+                       <div class="col">
+                           <div class="d-flex justify-content-center align-items-center">
+                               <i class="fas fa-check-circle text-success"></i>
+                                <span class="m-2">Editeur mobile</span>
+                           </div>
+               
+                       </div>
+    
+                       <div class="col">
+                           <div class="d-flex justify-content-center align-items-center">
+                               <i class="fas fa-check-circle text-success"></i>
+                                <span class="m-2">Service clientèle 24h/24 7j/7</span>
+                           </div>
+               
+                       </div>
+                       <div class="col">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fas fa-check-circle text-success"></i>
+                             <span class="m-2">Assistance virtuelle aux entreprises</span>
+                        </div>
+            
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fas fa-check-circle text-success"></i>
+                             <span class="m-2">Hébergement</span>
+                        </div>
+            
+                    </div>
+                   </div>                       
+              
+           </div>  
+           
+         </div>
+               
+         
+         <div class="card  col-12 col-md-3 shadow p-4 mb-5 bg-body rounded price-card">
+            <p class="text-dark  ms-3 fw-bold">E-commerce</p>           
+             
+            <div class="card-body">
+             <p class="card-title text-start h1">US$ 28,32 <span class="h4">/mois</span></p>
+             <p>Facturation trimestrielle</p>
+             <small class="fw-light">Vendez vos produits dans votre propre boutique en ligne</small> 
+             <div class="d-flex align-items-start flex-column mb-3" style="height: 600px;">
+               <div class="col">
+                   <div class="d-flex justify-content-start flex-row align-items-center">
+                       <i class="fas fa-check-circle text-success"></i>
+                        <span class="m-2">Banque d'images gratuite</span>
+                   </div>
+       
+               </div>
+    
+               <div class="col">
+                   <div class="d-flex justify-content-center align-items-center">
+                       <i class="fas fa-check-circle text-success"></i>
+                        <span class="m-2">Sans publicités</span>
+                   </div>
+       
+               </div>
+    
+               <div class="col">
+                   <div class="d-flex justify-content-center align-items-center">
+                       <i class="fas fa-check-circle text-success"></i>
+                        <span class="m-2">Nom de domaine personalisé (valeur : US$ 15,00)</span>
+                </div>
+       
+               </div>
+    
+               <div class="col">
+                   <div class="d-flex justify-content-center align-items-center">
+                       <i class="fas fa-check-circle text-success"></i>
+                        <span class="m-2">5 adresses email personnalisées</span>
+                   </div>
+       
+               </div>
+    
+               <div class="col">
+                <div class="d-flex justify-content-center align-items-center">
+                    <i class="fas fa-check-circle text-success"></i>
+                     <span class="m-2">utilisation illimitée des produits de la boutique en ligne</span>
+                </div>
+    
+            </div>
+    
+               <div class="col">
+                   <div class="d-flex justify-content-center align-items-center">
+                       <i class="fas fa-check-circle text-success"></i>
+                        <span class="m-2">Editeur mobile</span>
+                   </div>
+       
+               </div>
+    
+               <div class="col">
+                   <div class="d-flex justify-content-center align-items-center">
+                       <i class="fas fa-check-circle text-success"></i>
+                        <span class="m-2">Service clientèle 24h/24 7j/7</span>
+                   </div>
+       
+               </div>
+              
+            <div class="col">
+                <div class="d-flex justify-content-center align-items-center">
+                    <i class="fas fa-check-circle text-success"></i>
+                     <span class="m-2">Hébergement</span>
+                </div>
+    
+            </div>
+           </div>                       
+      
+    </div>  
+    
+    </div>
+</div>
+                
+    
+                </div>
+    
+            </div>
+            </div>
+           </section>
+    
+           <section class="my-3 before-footer" >
+            <div class="container-fluid h-100">
+                <div class="row p-5 ">
+                    <div class="col-sm-12 col-md-6 text-center" >
+                        <h1 class="text-primary  fw-bolder text-center">De quel genre de site web avez-vous besoin ?</h1>
+                        <p class="h2 fw-light">Nous vous guiderons pas à pas, du début à la fin. C'est pourquoi vous n'avez besoin d'aucune expérience pour construire le site web parfait.
+                            
+                            </p>
+                        <div class="row gy-5 p-5">
+                            <div class="col-12 d-flex justify-content-between rounded-4 w-75" id="first-p-footer">                           
+                                
+                                          <a href="#" class="text-decoration-none text-dark h4">  Profesionnel  <br>
+                                            <span class="tohide-text-first-p-footer">Faites la promotion de vos produits ou de votre expertise</span>
+                                          </a>                                
+                                     
+                                         <i class="fa fa-chevron-right  fa-1x  fw-bolder text-primary"></i>                               
+                              
+                            </div>
+    
+                            <div class="col-12 d-flex justify-content-between rounded-4 w-75" id="second-p-footer">                           
+                                                             
+                                <a href="#" class="text-decoration-none text-dark h4">  Blog ou Personnel  <br>
+                                  <span class="tohide-text-second-p-footer">Créer un blog, un portfolio ou un autre genre de site personnel.</span>
+                                </a>                                
+                           
+                               <i class="fa fa-chevron-right  fa-1x  fw-bolder text-primary"></i>                               
+                    
+                  </div>
+    
+                  <div class="col-12 d-flex justify-content-between rounded-4 w-75" id="other-p-footer">                           
+                                                             
+                    <a href="#" class="text-decoration-none text-dark h4"> Autre <br>
+                      <span class="tohide-text-other-p-footer">Créer n'importe quelle type de site web</span>
+                    </a>                                
+               
+                   <i class="fa fa-chevron-right  fa-1x  fw-bolder text-primary"></i>                               
+        
+      </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-12 col-md-6 bg-primary p-5">
+                        <div class="align-self-center w-100 p-5">
+                         <img src="images/alex_bottom_arrière_bleue_img.png" alt="wait loading..." class="w-50 m-5">
+                        </div>
+                    </div>
+                </div>
+    
+              
+            </div>
+           </section>
+        </main>
+    
+        <footer>
+    
+            <div class="container-fluid bg-primary-customised">
+                <div class="row _footer   p-auto" >
+                    <div class="col-sm-12 col-md-4">
+                        <div class="list unstyled-list  text-light fs-5 lh-5 fw-bold">
+    
+                            <div class="list-item">Slåenbakken 17
+                               </div>
+                            <div class="list-item"> DK-3460, Birkerød</div>
+                            <div class="list-item">Denmark</div>
+                          
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="list unstyled-list text-light fs-5 lh-5 fw-bold">
+                            <div class="list-item">Assistance client
+                                </div>
+                            <div class="list-item">serviceclientele@simplesite.com</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="list unstyled-list text-light fs-5 lh-5 fw-bold">
+                            <div class="list-item">
+                                SimpleSite - &copy; Copyright 2022
+    
+                            </div>
+                            <div class="list-item">Politique de cookie</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+    </html>

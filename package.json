@@ -1,0 +1,22 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "for customising my site colors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SodokinMarius/PLATEFORME-DE-CREATION-DE-SITE.git"
+  },
+  "author": "Yao Marius SODOKIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SodokinMarius/PLATEFORME-DE-CREATION-DE-SITE/issues"
+  },
+  "homepage": "https://github.com/SodokinMarius/PLATEFORME-DE-CREATION-DE-SITE#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
